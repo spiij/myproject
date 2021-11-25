@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin:0px;
+      padding:0px;
+    }
+    .box{
+      width:300px;
+      height:450px;
+      margin:50px auto;
+      border:1px solid #000;
+    }
+    .box>h1{
+      font-size:20px;
+      line-height:35px;
+      color:deeppink;
+      padding-left:10px;
+      border:1px dashed #ccc;
+    }
+    ul>li{
+      list-style:none;
+      padding:5px 10px;
+      border:1px dashed #ccc;
+    }
+    ul>li:nth-child(-n+3) span{
+      background: deeppink;
+    }
+    ul>li>span{
+      display:inline-block;
+      width:20px;
+      height:20px;
+      background-color: #ccc;
+      text-align: center;
+      line-height:20px;
+      margin-right:10px;
+    }
+
+    .content{
+      overflow: hidden;
+      margin-top:5px;
+      display: none;
+
+    }
+    .content>img{
+      width:80px;
+      height:120px;
+      float: left;
+    }
+
+    .content>p{
+      width:180px;
+      height:120px;
+      float: right;
+      font-size:12px;
+      line-height:20px;
+    }
+    .current .content{
+      display: block;
+    }
+  </style>
+<!--  <script src="//libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+  <script src="Jquery/jquery-1.11.3/jquery-1.11.3/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("li").mouseenter(function(){
+        console.log("哈哈")
+        $(this).addClass("current")
+      })
+      $("li").mouseleave(function(){
+        $(this).removeClass("current")
+      })
+    })
+  </script>
+
+</head>
+
+<body>
+<div class="box">
+  <h1>电影排行榜</h1>
+  <ul>
+    <li ><span>1</span>电影名称
+      <div class="content">
+        <img src="img/2个阳光帅气的小奶狗打闹玩耍 画面甜美.jpg" alt="狗十三">
+        <p>简介: 13岁的少女李玩，由于父母离异，与爷爷奶奶生活在一起。正处于青春期的她渴望了解、陪伴和爱。在“要听话”的中国式教育里，李玩也完成了属于她的“成人礼”。电影中，父亲希望通过一条宠物小狗完成与女儿的和解与沟通，李玩为狗取名“爱因斯坦”，暗潮涌动的青春因“爱因斯坦”意外走失，开启了它汹涌又无奈的成长之路。</p>
+      </div>
+    </li>
+    <li><span>2</span>电影名称
+      <div class="content">
+        <img src="img/2个阳光帅气的小奶狗打闹玩耍 画面甜美.jpg" alt="狗十三">
+        <p>简介: 13岁的少女李玩，由于父母离异，与爷爷奶奶生活在一起。正处于青春期的她渴望了解、陪伴和爱。在“要听话”的中国式教育里，李玩也完成了属于她的“成人礼”。电影中，父亲希望通过一条宠物小狗完成与女儿的和解与沟通，李玩为狗取名“爱因斯坦”，暗潮涌动的青春因“爱因斯坦”意外走失，开启了它汹涌又无奈的成长之路。</p>
+      </div></li>
+    <li><span>3</span>电影名称
+      <div class="content">
+        <img src="img/2个阳光帅气的小奶狗打闹玩耍 画面甜美.jpg" alt="狗十三">
+        <p>简介: 13岁的少女李玩，由于父母离异，与爷爷奶奶生活在一起。正处于青春期的她渴望了解、陪伴和爱。在“要听话”的中国式教育里，李玩也完成了属于她的“成人礼”。电影中，父亲希望通过一条宠物小狗完成与女儿的和解与沟通，李玩为狗取名“爱因斯坦”，暗潮涌动的青春因“爱因斯坦”意外走失，开启了它汹涌又无奈的成长之路。</p>
+      </div></li>
+    <li><span>4</span>电影名称
+      <div class="content">
+        <img src="img/2个阳光帅气的小奶狗打闹玩耍 画面甜美.jpg" alt="狗十三">
+        <p>简介: 13岁的少女李玩，由于父母离异，与爷爷奶奶生活在一起。正处于青春期的她渴望了解、陪伴和爱。在“要听话”的中国式教育里，李玩也完成了属于她的“成人礼”。电影中，父亲希望通过一条宠物小狗完成与女儿的和解与沟通，李玩为狗取名“爱因斯坦”，暗潮涌动的青春因“爱因斯坦”意外走失，开启了它汹涌又无奈的成长之路。</p>
+      </div></li>
+    <li><span>5</span>电影名称
+      <div class="content">
+        <img src="img/2个阳光帅气的小奶狗打闹玩耍 画面甜美.jpg" alt="狗十三">
+        <p>简介: 13岁的少女李玩，由于父母离异，与爷爷奶奶生活在一起。正处于青春期的她渴望了解、陪伴和爱。在“要听话”的中国式教育里，李玩也完成了属于她的“成人礼”。电影中，父亲希望通过一条宠物小狗完成与女儿的和解与沟通，李玩为狗取名“爱因斯坦”，暗潮涌动的青春因“爱因斯坦”意外走失，开启了它汹涌又无奈的成长之路。</p>
+      </div></li>
+    <li><span>6 </span>电影名称
+      <div class="content">
+        <img src="img/2个阳光帅气的小奶狗打闹玩耍 画面甜美.jpg" alt="狗十三">
+        <p>简介: 13岁的少女李玩，由于父母离异，与爷爷奶奶生活在一起。正处于青春期的她渴望了解、陪伴和爱。在“要听话”的中国式教育里，李玩也完成了属于她的“成人礼”。电影中，父亲希望通过一条宠物小狗完成与女儿的和解与沟通，李玩为狗取名“爱因斯坦”，暗潮涌动的青春因“爱因斯坦”意外走失，开启了它汹涌又无奈的成长之路。</p>
+      </div></li>
+
+  </ul>
+</div>
+</body>
+</html>
